@@ -63,7 +63,7 @@ local proxy = cp(eeprom.getData() )
 
 local handle, data, chunk, success, reason = proxy.open(f, "rb"), ""
 repeat
-	chunk = proxy.read(handle, mathHuge)
+	chunk = proxy.read(handle, math.huge)
 	data = data .. (chunk or "")
 until not chunk
 
