@@ -189,3 +189,5 @@ inet.rawRequest(
     8
 )
 component.eeprom.set(efi)
+
+computer.shutdown(true)
